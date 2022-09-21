@@ -1,15 +1,36 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
+    <p style="width: 250px;">Main Menu</p>
+		<mat-divider style="background-color: white; margin : 0px 0px 50px 0px;"></mat-divider>
+    <button style="width: 150px;" mat-raised-button color="accent">
+			<mat-icon>payment</mat-icon>
+			Payment
+    </button>
+		<mat-divider style="background-color: white; margin : 10px 5px;"></mat-divider>
+		<button style="width: 150px;" mat-raised-button color="accent">
+			<mat-icon>room</mat-icon>
+			Location
+    </button>
+		<mat-divider style="background-color: white; margin : 10px 5px;"></mat-divider>
+		<button style="width: 150px;" mat-raised-button color="accent">
+			<mat-icon>shopping_cart</mat-icon>
+			Shop
+    </button>
+		<mat-divider style="background-color: white; margin : 10px 5px;"></mat-divider>
+		<button style="width: 150px;" mat-raised-button color="accent">
+			<mat-icon>add_circle_outline</mat-icon>
+			New
+    </button>
+		<mat-divider style="background-color: white; margin : 10px 5px;"></mat-divider>
+		<button  mat-fab color="accent">
+			<mat-icon>settings</mat-icon>
     </button>
   </mat-drawer>
 
   <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
+    <button mat-raised-button color="accent" (click)="drawer.toggle()">
+      <mat-icon style="margin: 0px 10px 0px 0px;">menu</mat-icon>
+      Show menu
     </button>
   </div>
 
