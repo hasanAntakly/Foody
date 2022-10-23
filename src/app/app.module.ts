@@ -9,6 +9,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { MatIconModule } from '@angular/material/icon';
 		MatSidenavModule,
 		MatButtonModule,
 		MatDividerModule,
-		MatIconModule
+		MatIconModule,
+		MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

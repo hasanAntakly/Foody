@@ -1,37 +1,48 @@
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p style="width: 250px;">Main Menu</p>
-		<mat-divider style="background-color: white; margin : 0px 0px 50px 0px;"></mat-divider>
-    <button style="width: 150px;" mat-raised-button color="accent">
-			<mat-icon>payment</mat-icon>
-			Payment
-    </button>
-		<mat-divider style="background-color: white; margin : 10px 5px;"></mat-divider>
-		<button style="width: 150px;" mat-raised-button color="accent">
-			<mat-icon>room</mat-icon>
-			Location
-    </button>
-		<mat-divider style="background-color: white; margin : 10px 5px;"></mat-divider>
-		<button style="width: 150px;" mat-raised-button color="accent">
-			<mat-icon>shopping_cart</mat-icon>
-			Shop
-    </button>
-		<mat-divider style="background-color: white; margin : 10px 5px;"></mat-divider>
-		<button style="width: 150px;" mat-raised-button color="accent">
-			<mat-icon>add_circle_outline</mat-icon>
-			New
-    </button>
-		<mat-divider style="background-color: white; margin : 10px 5px;"></mat-divider>
-		<button  mat-fab color="accent">
-			<mat-icon>settings</mat-icon>
-    </button>
-  </mat-drawer>
+<div class="nav">
+	<div class="logo">
+		<span class="F">F</span>oody<span class="F">...</span>
+	</div>
+	<div class="NavContainer">
+		<div class="Navbtnindi">
+			<a class="NavButtons" href="#H" (click)="Indicator = 1">
+				i'm Hungry
+			</a>
+			<div *ngIf="Indicator == 1" [@inOutAnimation] class="Indi"></div>
+		</div>
+		<div class="Navbtnindi">
+			<a class="NavButtons" href="#C" (click)="Indicator = 2">
+				Categories
+			</a>
+			<div *ngIf="Indicator == 2" [@inOutAnimation] class="Indi"></div>
+		</div>
+		<div class="Navbtnindi">
+			<a class="NavButtons" href="#R" (click)="Indicator = 3">
+				Resturants
+			</a>
+			<div *ngIf="Indicator == 3" [@inOutAnimation] class="Indi"></div>
+		</div>
+		<div class="Navbtnindi">
+			<a class="NavButtons" href="#A" (click)="Indicator = 4">
+				About us
+			</a>	
+			<div *ngIf="Indicator == 4" [@inOutAnimation] class="Indi"></div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="HomeText">
+		<p><mat-icon style="color: #e11d47;">location_on</mat-icon><span style="opacity: 0.5;">Aleppo</span></p>
+		<h1>Discover resturants that</h1>
+		<h1>deliver near you!!!</h1>
+		<p>
+			<mat-form-field appearance="outline">
+				<mat-label>Outline form field</mat-label>
+				<input matInput placeholder="Placeholder">
+				<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+				<mat-hint>Hint</mat-hint>
+			</mat-form-field>
+		</p>	
+	</div>
+	<img width="50%" height="50%" src="/assets/burger.png">
+</div>
 
-  <div class="example-sidenav-content">
-    <button mat-raised-button color="accent" (click)="drawer.toggle()">
-      <mat-icon style="margin: 0px 10px 0px 0px;">menu</mat-icon>
-      Show menu
-    </button>
-  </div>
-
-</mat-drawer-container>
