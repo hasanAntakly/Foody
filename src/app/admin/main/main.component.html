@@ -30,36 +30,19 @@
 	</div>
 </div>
 <div class="container">
-	<div class="firstRow">
-		<h2>Find the best foods<mat-icon style="margin: 10px; color: #e11d47;"> fastfood</mat-icon></h2>
-		<mat-form-field appearance="fill">
-			<mat-label style="color: white;">Toppings</mat-label>
-			<mat-select style="color: white;" [formControl]="toppings" multiple>
-				<mat-select-trigger style="color: white;">
-					{{toppings.value?.[0] || ''}}
-					<span style="color: white;" *ngIf="(toppings.value?.length || 0) > 1" class="example-additional-selection">
-						(+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
-					</span>
-				</mat-select-trigger>
-				<mat-option style="color: white; background-color: #444;" *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-			</mat-select>
-		</mat-form-field>
+	<div class="HomeText">
+		<p><mat-icon style="color: #e11d47;">location_on</mat-icon><span style="opacity: 0.5;">Aleppo</span></p>
+		<h1>Discover resturants that</h1>
+		<h1>deliver near you!!!</h1>
+		<p>
+			<mat-form-field appearance="outline">
+				<mat-label>Outline form field</mat-label>
+				<input matInput placeholder="Placeholder">
+				<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+				<mat-hint>Hint</mat-hint>
+			</mat-form-field>
+		</p>	
 	</div>
-	<div class="secondRow">
-		<div class="btnCate">1</div>
-		<div class="btnCate">2</div>
-		<div class="btnCate">3</div>
-		<div class="btnCate">4</div>
-		<div class="btnCate">5</div>
-		<div class="btnCate">6</div>
-		<div class="btnCate">7</div>
-		<div class="btnCate">8</div>
-		<div class="btnCate">9</div>
-		<div class="btnCate">10</div>
-	</div>
-	<mat-grid-list cols="1" rowHeight="2:1">
-		<mat-grid-tile style="background-color: #444;">1</mat-grid-tile>
-		<mat-grid-tile>2</mat-grid-tile>
-	</mat-grid-list>
+	<img width="50%" height="50%" src="/assets/burger.png">
 </div>
 
