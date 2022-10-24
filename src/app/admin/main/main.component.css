@@ -14,9 +14,33 @@
 
 .container {
 	padding: 60px;
+}
+
+.con1 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.con2 {
+	margin: 40px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btnCon {
+	font-size: 20px;
+	background-color: #333;
+	border-radius: 30px;
+	width: 60px;
+	height: 100px;
+}
+
+.btnIcon {
+	margin: 10px;
+	text-align: center;
+	color: #e11d47;
 }
 
 .HomeText {

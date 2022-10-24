@@ -13,7 +13,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,6 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 		MatGridListModule,
 		MatSelectModule,
 		ReactiveFormsModule,
-		AngularFontAwesomeModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

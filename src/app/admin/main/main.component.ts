@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
 
+interface Food {
+  value: string;
+  viewValue: string;
+}
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -32,6 +37,11 @@ import { trigger, style, animate, transition } from '@angular/animations';
 export class MainComponent implements OnInit {
   constructor() { }
 	Indicator = 0;		
+	foods: Food[] = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'},
+  ];
 
   ngOnInit(): void {
   }

@@ -30,19 +30,67 @@
 	</div>
 </div>
 <div class="container">
-	<div class="HomeText">
-		<p><mat-icon style="color: #e11d47;">location_on</mat-icon><span style="opacity: 0.5;">Aleppo</span></p>
-		<h1>Discover resturants that</h1>
-		<h1>deliver near you!!!</h1>
-		<p>
-			<mat-form-field appearance="outline">
-				<mat-label>Outline form field</mat-label>
-				<input matInput placeholder="Placeholder">
-				<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-				<mat-hint>Hint</mat-hint>
-			</mat-form-field>
-		</p>	
+	<div class="con1">
+		<h2>Find the best foods</h2>
+		<mat-form-field style="color: white;" appearance="fill">
+			<mat-label style="color: white;">Favorite food</mat-label>
+			<mat-select style="color: white;">
+				<mat-option style="color: white; background-color: #444;" *ngFor="let food of foods" [value]="food.value">
+					{{food.viewValue}}
+				</mat-option>
+			</mat-select>
+		</mat-form-field>
 	</div>
-	<img width="50%" height="50%" src="/assets/burger.png">
+	<div class="con2">
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-utensils"></i></div>
+			<p style="text-align: center;">all</p>			
+		</div>
+
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-pizza-slice"></i></div>
+			<p style="text-align: center;">Pizza</p>			
+		</div>
+
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-mug-hot"></i></div>
+			<p style="text-align: center;">Drinks</p>			
+		</div>
+
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-birthday-cake"></i></div>
+			<p style="text-align: center;">Cake</p>			
+		</div>
+
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-utensils"></i></div>
+			<p style="text-align: center;">all</p>			
+		</div>
+		
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-utensils"></i></div>
+			<p style="text-align: center;">all</p>			
+		</div>
+
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-utensils"></i></div>
+			<p style="text-align: center;">all</p>			
+		</div>
+
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-utensils"></i></div>
+			<p style="text-align: center;">all</p>			
+		</div>
+
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-utensils"></i></div>
+			<p style="text-align: center;">all</p>			
+		</div>
+
+		<div class="btnCon">
+			<div class="btnIcon"><i class="fas fa-utensils"></i></div>
+			<p style="text-align: center;">all</p>			
+		</div>
+	</div>
 </div>
 
