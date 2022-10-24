@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-main',
@@ -32,6 +33,9 @@ import { trigger, style, animate, transition } from '@angular/animations';
 export class MainComponent implements OnInit {
   constructor() { }
 	Indicator = 0;		
+	toppings = new FormControl('');
+
+  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
 
   ngOnInit(): void {
   }
